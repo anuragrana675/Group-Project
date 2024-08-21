@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture Buddy</title>
+    <link rel="stylesheet" href="buddy.css">
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+    <nav class="navbarDesign">
+        <div class="logo">
+            <img src="logo.jpg" alt="logo" sizes="">
+            <h1>lecturebuddy.in</h1>
+        </div>
+        <div class="navbar">
+            <a href="#home">Home</a>&emsp;
+            <a href="#courses">Courses</a>&emsp;
+            <a href="#admission">Admission</a>&emsp;
+            <a href="#contact">Contact</a>&emsp;
+            <a href="login.html"><button>Login</button></a>&emsp;
+        </div>
+    </nav>
+</header>
+    <div class="container">
+       <section class="aboutUs">
+            <div class="para1">
+             <h2>About us</h2>
+             <br>
+                <p>In the year 2020, our visionary team saw a dream. A dream to impart quality education to every
+                    student who would come seeking it. Through his persistent efforts, We realized our dream and
+                    brought
+                    the ‘lecturebuddy’ Legacy to life along with students as our support pillars and directors of
+                    the
+                    organization.
+                </p>
+            </div>
+            <div class="image-section">
+                <img src="openbook.jpg" height="200px" alt="Open Book">
+            </div>
+        </section>
+
+        <section class="our-motive-section">
+            <div class="motive-section" data-aos="fade-up">
+                <h1>Our Motive</h1>
+                <p>Our goal is to make students enjoy studies and prepare them for reaching greater heights. Our unique
+                    teaching methodology is focused on making students learn conceptually and in a way that works for
+                    them.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="features">
+                <div class="feature-item" data-aos="fade-up">
+                    <img src="interactive-content.png" alt="Learning Material">
+                    <p>Learning Material</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up">
+                    <img src="online-result.png" alt="Interactive Learning">
+                    <p>Interactive Learning</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up">
+                    <img src="certification.png" alt="Quality Education">
+                    <p>Quality Education</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up">
+                    <img src="customer-service.png" alt="24x7 Student Support">
+                    <p>24x7 Student Support</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up">
+                    <img src="hand.png" alt="Affordable Fees">
+                    <p>Affordable Fees</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up">
+                    <img src="discussion.png" alt="Free Career Guidance">
+                    <p>Free Career Guidance</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <section class="course-section">
+        <h1>Get started with us!</h1>
+
+        <div class="course">
+            <div class="jee" data-aos="fade-right">
+                <i class="fas fa-book-open"></i>
+                <h3>JEE</h3>
+                <img src="process.png" height="70px" alt="JEE Course">
+            </div>
+            <div class="jee" data-aos="fade-up">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>NEET</h3>
+                <img src="medical-result.png" height="70px" alt="NEET Course">
+            </div>
+            <div class="jee" data-aos="fade-left">
+                <i class="fas fa-certificate"></i>
+                <h3>GRADE 6-12</h3>
+                <img src="notebooks y.png" height="70px" alt="Grade 6-12 Course">
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="logo.jpg" alt="Lecture Buddy Logo" class="logo" height="50px">
+                <b><a href="#">lecturebuddy.in</a></b>
+               <p>Lecturebuddy.in Pvt. Ltd. with a directorial experience of 2+ years has evolved tremendously in
+                    quality education</p></div>
+            </div>
+            <div class="footer-section">
+                <h4>Reach out to us</h4>
+                <ul>
+                    <li>Bharati Vidyapeeth College</li>
+                    <li><a href="mailto:learn@lecturebuddy.com">learn@lecturebuddy.com</a></li>
+                    <li><a href="tel:+919016609752">+91 9016609752</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Courses</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms & Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('.navbar a, .footer-section a, .login a').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Initialize AOS
+            AOS.init({
+                duration: 1000,
+                easing: 'ease-in-out',
+                once: true
+            });
+        });
+    </script>
+</body>
+
+</html>

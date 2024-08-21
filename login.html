@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Lecture Buddy</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img class="img" src="logo.jpg" alt="Lecture Buddy Logo">
+        
+        <h1>Welcome back!</h1>
+        <p>Enter to get unlimited access to knowledge</p>
+    </div>
+        <form action="#">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your mail address" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" required>
+            
+            <div class="options">
+                <div>
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <a href="#">Forgot password?</a>
+            </div>
+            
+            <button type="submit" class="login-btn">Login</button>
+            
+            <div class="divider">or</div>
+            
+            <button type="button" class="google-btn">
+                <img src="Google.webp" alt="Google Logo"> Continue with Google
+            </button>
+        </form>
+        
+        <p class="register">Don't have an account? <a href="#">Register here</a></p>
+    </div>
+</body>
+</html>

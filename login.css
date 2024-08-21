@@ -1,0 +1,156 @@
+body{
+  padding: 25px;
+}
+.title {
+	color: #5C6AC4;
+}body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #B5D7DC;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.logo img {
+    display: flex;
+}
+
+.logo h1 {
+    display: flex;
+}
+
+.logo p {
+    display: flex;
+}
+
+.logo img {
+    max-width: 60px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 14px;
+    color: #333333;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.options label {
+    margin: 0;
+    font-size: 14px;
+}
+
+.options a {
+    font-size: 14px;
+    color: #3B3BFF;
+    text-decoration: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #3B3BFF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    position: relative;
+    color: #666666;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    height: 1px;
+    width: 30%;
+    background-color: #CCCCCC;
+    position: absolute;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.google-btn {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-btn img {
+    max-width: 20px;
+    margin-right: 10px;
+}
+
+.register {
+    font-size: 14px;
+    color: #666666;
+}
+
+.register a {
+    color: #3B3BFF;
+    text-decoration: none;
+}
