@@ -1,34 +1,23 @@
-* {
-  box-sizing: border-box;
-}
 form {
-  width: 40%;
-  margin: 40px auto;
+    max-width: 400px;
+    margin: 40px auto;
     padding: 20px;
-    height: 100vh;
-    background-color: #363a7c;
+    background-color: #f9f9f9;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
   }
-
-  h1 {
-    display: flex;
-    justify-content: center;
-    color: white;
-  }
-  .form {
-    width: 80%;
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
   }
   
   input[type="text"], input[type="email"], input[type="tel"] {
     width: 100%;
-    height: px;
+    height: 40px;
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 10px;
   }
   
   select {
@@ -37,23 +26,19 @@ form {
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 10px;
   }
   
-  button {
-    width: 40%;
+  input[type="submit"] {
+    width: 100%;
     height: 40px;
-    background-color: #3b3bff;
+    background-color: #4CAF50;
     color: #fff;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    margin: auto;
   }
   
-  button:hover {
-    background-color: #053f8b;
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
   }
