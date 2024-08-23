@@ -1,9 +1,10 @@
-body{
+/* body{
   padding: 25px;
-}
-.title {
+} */
+/* .title {
 	color: #5C6AC4;
-}body {
+} */
+/* }body {
     font-family: 'Arial', sans-serif;
     background-color: white;
     margin: 0;
@@ -12,16 +13,25 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
+} */
 
 .login-container {
     background-color: #B5D7DC;
-    padding: 40px;
-    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    right: -30%;
+    width: 30%;
+    height: 100%;
+    /* padding: 40px;
+    border-radius: 10px; */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 400px;
-    width: 100%;
+    transition: right 0.3s ease;
+    overflow: auto;
+    padding: 20px;
+    display: none;
+    /* max-width: 400px;
+    width: 100%; */
 }
 
 .logo img {
@@ -141,7 +151,7 @@ input[type="password"] {
 }
 
 .google-btn img {
-    max-width: 20px;
+    max-width: 30px;
     margin-right: 10px;
 }
 
@@ -153,4 +163,17 @@ input[type="password"] {
 .register a {
     color: #3B3BFF;
     text-decoration: none;
+}
+
+.login-container.open {
+    display: block; /* Show when open */
+    right: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-size: 24px;
+    cursor: pointer;
 }
